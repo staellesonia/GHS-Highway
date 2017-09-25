@@ -1,0 +1,26 @@
+#bloc_page{
+  width:600px;
+  margin:auto;
+  background-color:white;
+  border-radius:5px;
+  opacity:0.8
+  font-family: calibri, arial;
+}
+form{
+  
+  width:400px;
+  margin:auto;
+}
+.form-group{
+  padding:15px;
+}
+#typebadge{
+ 
+  padding-left:30px;
+}
+
+#action{
+  background-color:#1E90FF;
+  color:white;
+  text-align:center;
+}

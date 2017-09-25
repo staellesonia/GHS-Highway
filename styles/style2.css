@@ -1,0 +1,62 @@
+#bloc_page{
+  width:900px;
+  margin:auto;
+  background-color:white;
+  border-radius:5px;
+  opacity:0.8;
+}
+body{
+  
+  color:black;
+  background-image:url(../images/parking.jpeg);
+  text-align:center;
+  background-repeat:no-repeat;  
+  background-position:100% ;
+
+}
+h1{
+  font-family:calibri, arial;
+}
+iframe{
+  text-align:center;
+  border-style:none;
+  border:1px black solid;
+}
+#action{
+  background-color:#1E90FF;
+  color:white;
+}
+#logo img{
+  width: 90px;
+  display: flex;
+  flex-direction:row;
+  opacity:0.6;
+  border-radius:5px;
+}
+#stat{
+  width:700px;
+  margin:auto;
+}
+
+form{  
+  width:700px;
+  margin-top:40px;
+  
+}
+
+.form-group{
+  padding:20px;
+}
+
+#contact{
+width:450px;
+   
+}
+ #Mentions{
+ text-align:center;
+  width:450px important!;
+  margin-bottom:30px;
+ } 
+.form-control{
+padding-bottom:30px;
+}   

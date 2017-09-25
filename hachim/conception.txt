@@ -1,0 +1,58 @@
+cahier des charges:
+
+Un concessionnaire d'autoroute (exploitant de l'autoroute) fait appel à un prestataire (sous-traitant)
+pour gérer le système informatique des péages.
+L'autoroute comporte 10 entrées (ou sorties) avec un nombre variable de guichets (lignes).
+3 types de règlements sont prévus pour l’usager :
+• En liquide
+• En carte bancaire
+• Par badge électronique de télépéage (Le badge électronique est obtenu avec un
+abonnement dans une agence du concessionnaire).
+
+
+Le concessionnaire effectue un import des données chaque soir.
+
+
+Le(s) serveur(s) web permettra(ont) :
+• Au concessionnaire de connaitre l’ensemble du trafic, les heures de pointes, les trajets
+effectués, …
+• Au prestataire de connaitre une vue détaillée du trafic (trajet, parcours moyen, vitesse
+moyenne ,…), les paiements et leur types (liquide, CB, télépéage)
+• A l’abonné d'avoir le rapport de ses déplacements et paiements.
+Le prestataire aura besoin d’un suivi d’activité sur son serveur Apache, mettre en oeuvre une
+solution de supervision.
+Dans une démarche qualité, vous devez fournir tous les scripts à votre client afin de pouvoir
+déployer l’architecture sur d’autres sites.
+Vous devez fournir une documentation détaillée de l’installation afin de la reproduire si besoin..
+Mettre en place une solution de synchronisation entre le concessionnaire et le prestataire.
+
+
+Mettre en place une solution de sauvegarde.
+Le prestataire aura besoin d’un suivi d’activité sur son serveur Apache, mettre en oeuvre une
+solution de supervision.
+Dans une démarche qualité, vous devez fournir tous les scripts à votre client afin de pouvoir
+déployer l’architecture sur d’autres sites.
+Vous devez fournir une documentation détaillée de l’installation afin de la reproduire si besoin.
+
+
+Conception:
+
+Afin de répondre aux besoins de GHS-Highway,
+Nous proposons de mettre en place une application commune au différents type d'utilisateurs.
+
+Ainsi le concessionnaire, les abonnés et nous même, seront dirigé dans un premier temps sur une page d'aceuil commune.
+Selon l'identifiant de connection et le mot de passe, nous pourront différencier les trois types d'utilisateur via :
+-concessionnaire
+-prestatire
+-abonnés
+
+Chacun des utilisateurs seront dirigés sur une page differentes avec des fonctionnalités précises.
+
+Ainsi l'abonné sera dirigé sur une page abonné sur laquelle il pourra voir sa facture, ses déplacements et paiements.
+
+Le concessionnaire pourra voir l'ensemble du trafic en cours les heures de pointes et les trajets.
+Nous proposons également une interface de gestion des abonnées. Cela permetrat d'ajouter des nouveaux clients et de prendre en compte les nouveaux badges.
+La mise a jour de la base client pourra se faire ainsi automatiquemennt et en temps réel.
+
+Le prestataire, pourra via des requêtes sql afficher différentes informations détaillées du trafic visible en temps réel.
+Nous pourrons ainsi éditer des rapports du trafic en cours, des paiements (cb, espèce, abonnés). Ces informations pouront être importer par le concessionnaire.
